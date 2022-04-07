@@ -125,7 +125,7 @@ body {
   background-image: url("../img/hero.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100vw;
   height: 100%;
   pointer-events: none;
@@ -406,8 +406,40 @@ body {
 @media only screen and (max-width: 767px) {
   .title-galante {
     font-size: 24px;
-    line-height: 15px;
+    line-height: 28px;
     text-align: center;
     margin: 0 0 30px;
+  }
+
+  .btn-galante {
+    font-size: 15px;
+    line-height: 14px;
+    width: 250px;
+    height: 165px;
+  }
+
+  .hero-galante {
+    min-height: 800px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 47px 0;
+  }
+
+  .hero-galante:before {
+    background-image: url("../img/hero-mobile.png");
+  }
+
+  .hero-galante__body {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .hero-galante .title-galante span {
+    display: block;
   }
 }

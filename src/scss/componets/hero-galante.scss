@@ -15,7 +15,7 @@
     background-image: url("../img/hero.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     height: 100%;
     pointer-events: none;
@@ -23,5 +23,22 @@
   &__body{
     position: relative;
     z-index: 10;
+  }
+  @include r(767){
+    min-height: 800px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 47px 0;
+    &:before{
+      background-image: url("../img/hero-mobile.png");
+    }
+    &__body{
+      text-align: center;
+    }
+  }
+  @include r(424){
+    .title-galante span{
+      display: block;
+    }
   }
 }
