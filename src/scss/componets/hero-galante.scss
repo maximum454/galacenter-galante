@@ -28,7 +28,7 @@
     min-height: 800px;
     justify-content: center;
     align-items: flex-start;
-    padding: 47px 0;
+    padding: 39px 0;
     &:before{
       background-image: url("../img/hero-mobile.png");
     }
@@ -37,8 +37,12 @@
     }
   }
   @include r(424){
+    margin-bottom: 0;
     .title-galante span{
       display: block;
+    }
+    .btn-galante{
+      margin-top: -34px;
     }
   }
 }

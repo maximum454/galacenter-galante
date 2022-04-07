@@ -406,9 +406,9 @@ body {
 @media only screen and (max-width: 767px) {
   .title-galante {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 34px;
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 35px;
   }
 
   .btn-galante {
@@ -426,7 +426,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 47px 0;
+    padding: 39px 0;
   }
 
   .hero-galante:before {
@@ -436,10 +436,96 @@ body {
   .hero-galante__body {
     text-align: center;
   }
+
+  .women-galante__body {
+    min-height: 876px;
+  }
+
+  .women-galante__item {
+    font-size: 15px;
+    line-height: 17px;
+    position: relative;
+  }
+
+  .women-galante__item.hat {
+    width: 360px;
+    height: 252px;
+    left: -16px;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .women-galante__item.hat span {
+    margin-top: -65px;
+    margin-left: 96px;
+  }
+
+  .women-galante__item.hat:before {
+    background-image: url("../img/hat-mobile.png");
+  }
+
+  .women-galante__item.glasses {
+    width: 360px;
+    height: 241px;
+    right: 16px;
+    top: 0;
+    margin-top: -95px;
+  }
+
+  .women-galante__item.glasses span {
+    margin-top: -28px;
+    margin-left: 77px;
+  }
+
+  .women-galante__item.glasses:before {
+    background-image: url("../img/glasses-mobile.png");
+  }
+
+  .women-galante__item.bag {
+    width: 350px;
+    height: 268px;
+    left: -6px;
+    top: 0;
+    margin-top: -77px;
+  }
+
+  .women-galante__item.bag span {
+    margin-top: -11px;
+    margin-left: -66px;
+  }
+
+  .women-galante__item.bag:before {
+    background-image: url("../img/bag-mobile.png");
+  }
+
+  .women-galante__item.umbrella {
+    width: 360px;
+    height: 364px;
+    right: 16px;
+    top: 0;
+    margin-top: -22px;
+  }
+
+  .women-galante__item.umbrella span {
+    margin-top: -124px;
+    margin-left: -191px;
+  }
+
+  .women-galante__item.umbrella:before {
+    background-image: url("../img/umbrella-mobile.png");
+  }
 }
 
 @media only screen and (max-width: 424px) {
+  .hero-galante {
+    margin-bottom: 0;
+  }
+
   .hero-galante .title-galante span {
     display: block;
+  }
+
+  .hero-galante .btn-galante {
+    margin-top: -34px;
   }
 }

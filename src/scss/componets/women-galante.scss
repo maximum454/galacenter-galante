@@ -91,4 +91,72 @@
       }
     }
   }
+  @include r(767){
+    &__body{
+      min-height: 876px;
+    }
+    &__item{
+      font-size: 15px;
+      line-height: 17px;
+      position: relative;
+      &.hat{
+        width: 360px;
+        height: 252px;
+        left: -16px;
+        top: 0;
+        margin: 0 auto;
+        span{
+          margin-top: -65px;
+          margin-left: 96px;
+        }
+        &:before{
+          background-image: url("../img/hat-mobile.png");
+        }
+      }
+      &.glasses{
+        width: 360px;
+        height: 241px;
+        right: 16px;
+        top: 0;
+        margin-top: -95px;
+        span{
+          margin-top: -28px;
+          margin-left: 77px;
+        }
+        &:before{
+          background-image: url("../img/glasses-mobile.png");
+        }
+      }
+
+      &.bag{
+        width: 350px;
+        height: 268px;
+        left: -6px;
+        top: 0;
+        margin-top: -77px;
+        span{
+          margin-top: -11px;
+          margin-left: -66px;
+        }
+        &:before{
+          background-image: url("../img/bag-mobile.png");
+        }
+      }
+      &.umbrella{
+        width: 360px;
+        height: 364px;
+        right: 16px;
+        top: 0;
+        margin-top: -22px;
+        span{
+          margin-top: -124px;
+          margin-left: -191px;
+        }
+        &:before{
+          background-image: url("../img/umbrella-mobile.png");
+        }
+      }
+    }
+  }
+
 }
