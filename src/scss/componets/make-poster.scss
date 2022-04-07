@@ -23,4 +23,19 @@
     position: relative;
     z-index: 10;
   }
+  @include r(767){
+    min-height: 500px;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 63px 0;
+    align-items: flex-start;
+    justify-content: center;
+    &:before{
+      background-image: url("../img/make-bg-mobile.png");
+      background-position: center;
+    }
+    .btn-galante{
+      margin-top: -54px;
+    }
+  }
 }

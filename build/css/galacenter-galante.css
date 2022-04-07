@@ -514,6 +514,28 @@ body {
   .women-galante__item.umbrella:before {
     background-image: url("../img/umbrella-mobile.png");
   }
+
+  .make-poster {
+    min-height: 500px;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 63px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .make-poster:before {
+    background-image: url("../img/make-bg-mobile.png");
+    background-position: center;
+  }
+
+  .make-poster .btn-galante {
+    margin-top: -54px;
+  }
 }
 
 @media only screen and (max-width: 424px) {
