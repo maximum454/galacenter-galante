@@ -58,4 +58,42 @@
       }
     }
   }
+  @include r(767){
+    &__body{
+      min-height: 548px;
+    }
+    &__item{
+      position:relative;
+      font-size: 15px;
+      line-height: 17px;
+      &.scarf{
+        width: 360px;
+        height: 351px;
+        left: -16px;
+        top: 0;
+        margin-top: -14px;
+        span{
+          margin-top: -55px;
+          margin-left: 60px;
+        }
+        &:before{
+          background-image: url("../img/scarf-mobile.png");
+        }
+      }
+      &.socks{
+        width: 304px;
+        height: 273px;
+        right: -22px;
+        top: 0;
+        margin-top: -98px;
+        span{
+          margin-top: -10px;
+          margin-left: 74px;
+        }
+        &:before{
+          background-image: url("../img/socks-mobile.png");
+        }
+      }
+    }
+  }
 }

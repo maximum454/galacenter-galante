@@ -404,6 +404,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../img/bg-mobile.png");
+  }
+
   .title-galante {
     font-size: 24px;
     line-height: 34px;
@@ -541,6 +545,50 @@ body {
 
   .man-poster .btn-galante {
     margin-top: -34px;
+  }
+
+  .man-galante__body {
+    min-height: 548px;
+  }
+
+  .man-galante__item {
+    position: relative;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .man-galante__item.scarf {
+    width: 360px;
+    height: 351px;
+    left: -16px;
+    top: 0;
+    margin-top: -14px;
+  }
+
+  .man-galante__item.scarf span {
+    margin-top: -55px;
+    margin-left: 60px;
+  }
+
+  .man-galante__item.scarf:before {
+    background-image: url("../img/scarf-mobile.png");
+  }
+
+  .man-galante__item.socks {
+    width: 304px;
+    height: 273px;
+    right: -22px;
+    top: 0;
+    margin-top: -98px;
+  }
+
+  .man-galante__item.socks span {
+    margin-top: -10px;
+    margin-left: 74px;
+  }
+
+  .man-galante__item.socks:before {
+    background-image: url("../img/socks-mobile.png");
   }
 
   .make-poster {
