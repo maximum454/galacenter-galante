@@ -1,3 +1,61 @@
 .man-galante{
-  
+  &__body{
+    min-height: 817px;
+    position: relative;
+  }
+  &__item{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    transition: .3s ease;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      pointer-events: none;
+    }
+    &:hover{
+      opacity: .7;
+      transition: .3s ease;
+    }
+    span{
+      position: relative;
+      z-index: 1;
+    }
+    &.scarf{
+      width: 940px;
+      height: 800px;
+      left: -158px;
+      top: -58px;
+      span{
+        margin-top: -78px;
+      }
+      &:before{
+        background-image: url("../img/scarf.png");
+      }
+    }
+    &.socks{
+      width: 656px;
+      height: 606px;
+      right: -100px;
+      top: 230px;
+      &:before{
+        background-image: url("../img/socks.png");
+      }
+    }
+  }
 }
