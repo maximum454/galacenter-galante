@@ -1,6 +1,6 @@
 .women-galante{
   &__body{
-    min-height: 1190px;
+    min-height: 822px;
     position: relative;
   }
   &__item{
@@ -41,6 +41,7 @@
       height: 408px;
       left: -84px;
       top: 0;
+      z-index: 10;
       span{
         margin-top: -120px;
         color: #915A6D;
@@ -52,11 +53,11 @@
     &.glasses{
       width: 804px;
       height: 622px;
-      right: -179px;
-      top: 60px;
+      left: -197px;
+      top: 288px;
       span{
-        margin-top: -63px;
-        margin-left: 220px;
+        margin-top: -81px;
+        margin-left: 228px;
       }
       &:before{
         background-image: url("../img/glasses.png");
@@ -66,8 +67,9 @@
     &.bag{
       width: 937px;
       height: 664px;
-      left: -177px;
-      top: 293px;
+      right: -321px;
+      top: 50px;
+
       span{
         margin-top: -65px;
         margin-left: -220px;
@@ -76,23 +78,10 @@
         background-image: url("../img/bag.png");
       }
     }
-    &.umbrella{
-      width: 1008px;
-      height: 754px;
-      right: -179px;
-      top: 548px;
-      span{
-        margin-top: -185px;
-        margin-left: -58px;
-      }
-      &:before{
-        background-image: url("../img/umbrella.png");
-      }
-    }
   }
   @include r(767){
     &__body{
-      min-height: 876px;
+      min-height: 609px;
     }
     &__item{
       font-size: 15px;
@@ -100,9 +89,9 @@
       position: relative;
       &.hat{
         width: 360px;
-        height: 252px;
+        height: 191px;
         left: -16px;
-        top: 0;
+        top: 30px;
         margin: 0 auto;
         span{
           margin-top: -65px;
@@ -114,10 +103,11 @@
       }
       &.glasses{
         width: 360px;
-        height: 241px;
-        right: 16px;
+        height: 165px;
+        right: auto;
+        left: -18px;
         top: 0;
-        margin-top: -95px;
+        margin-top: 0;
         span{
           margin-top: -28px;
           margin-left: 77px;
@@ -132,7 +122,7 @@
         height: 268px;
         left: -6px;
         top: 0;
-        margin-top: -77px;
+        margin-top: -34px;
         span{
           margin-top: -11px;
           margin-left: -66px;

@@ -1,6 +1,6 @@
 .man-galante{
   &__body{
-    min-height: 817px;
+    min-height: 723px;
     position: relative;
   }
   &__item{
@@ -36,23 +36,28 @@
       position: relative;
       z-index: 1;
     }
-    &.scarf{
-      width: 940px;
-      height: 800px;
-      left: -158px;
-      top: -58px;
+    &.umbrella{
+      width: 1008px;
+      height: 754px;
+      left: -450px;
+      top: 122px;
       span{
-        margin-top: -78px;
+        margin-top: -246px;
+        margin-left: -55px;
       }
       &:before{
-        background-image: url("../img/scarf.png");
+        background-image: url("../img/umbrella.png");
       }
     }
     &.socks{
       width: 656px;
       height: 606px;
-      right: -100px;
-      top: 230px;
+      right: -125px;
+      top: 72px;
+      span{
+        margin-top: -24px;
+        margin-left: 100px;
+      }
       &:before{
         background-image: url("../img/socks.png");
       }
@@ -66,26 +71,26 @@
       position:relative;
       font-size: 15px;
       line-height: 17px;
-      &.scarf{
+      &.umbrella{
         width: 360px;
-        height: 351px;
-        left: -16px;
-        top: 0;
-        margin-top: -14px;
+        height: 338px;
+        left: 3px;
+        top: 61px;
+        margin-top: 0;
         span{
-          margin-top: -55px;
-          margin-left: 60px;
+          margin-top: -124px;
+          margin-left: -191px;
         }
         &:before{
-          background-image: url("../img/scarf-mobile.png");
+          background-image: url("../img/umbrella-mobile.png");
         }
       }
       &.socks{
         width: 304px;
         height: 273px;
-        right: -22px;
-        top: 0;
-        margin-top: -98px;
+        right: -33px;
+        top: -70px;
+        margin-top: 0;
         span{
           margin-top: -10px;
           margin-left: 74px;

@@ -26,12 +26,28 @@
 }
 
 body {
-  background-image: url("../img/bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   font-family: "GothamPro", sans-serif;
   font-weight: 400;
+}
+
+.bg-galante {
+  position: relative;
+}
+
+.bg-galante:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-image: url("../img/bg.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
 }
 
 .main {
@@ -101,7 +117,7 @@ body {
 }
 
 .hero-galante {
-  min-height: 700px;
+  min-height: 652px;
   position: relative;
   margin-bottom: 98px;
   padding: 72px 0;
@@ -137,7 +153,7 @@ body {
 }
 
 .women-galante__body {
-  min-height: 1190px;
+  min-height: 822px;
   position: relative;
 }
 
@@ -194,6 +210,7 @@ body {
   height: 408px;
   left: -84px;
   top: 0;
+  z-index: 10;
 }
 
 .women-galante__item.hat span {
@@ -208,13 +225,13 @@ body {
 .women-galante__item.glasses {
   width: 804px;
   height: 622px;
-  right: -179px;
-  top: 60px;
+  left: -197px;
+  top: 288px;
 }
 
 .women-galante__item.glasses span {
-  margin-top: -63px;
-  margin-left: 220px;
+  margin-top: -81px;
+  margin-left: 228px;
 }
 
 .women-galante__item.glasses:before {
@@ -224,8 +241,8 @@ body {
 .women-galante__item.bag {
   width: 937px;
   height: 664px;
-  left: -177px;
-  top: 293px;
+  right: -321px;
+  top: 50px;
 }
 
 .women-galante__item.bag span {
@@ -235,22 +252,6 @@ body {
 
 .women-galante__item.bag:before {
   background-image: url("../img/bag.png");
-}
-
-.women-galante__item.umbrella {
-  width: 1008px;
-  height: 754px;
-  right: -179px;
-  top: 548px;
-}
-
-.women-galante__item.umbrella span {
-  margin-top: -185px;
-  margin-left: -58px;
-}
-
-.women-galante__item.umbrella:before {
-  background-image: url("../img/umbrella.png");
 }
 
 .man-poster {
@@ -285,11 +286,11 @@ body {
 .man-poster__body {
   position: relative;
   z-index: 10;
-  padding-left: 340px;
+  padding-left: 366px;
 }
 
 .man-galante__body {
-  min-height: 817px;
+  min-height: 723px;
   position: relative;
 }
 
@@ -341,26 +342,32 @@ body {
   z-index: 1;
 }
 
-.man-galante__item.scarf {
-  width: 940px;
-  height: 800px;
-  left: -158px;
-  top: -58px;
+.man-galante__item.umbrella {
+  width: 1008px;
+  height: 754px;
+  left: -450px;
+  top: 122px;
 }
 
-.man-galante__item.scarf span {
-  margin-top: -78px;
+.man-galante__item.umbrella span {
+  margin-top: -246px;
+  margin-left: -55px;
 }
 
-.man-galante__item.scarf:before {
-  background-image: url("../img/scarf.png");
+.man-galante__item.umbrella:before {
+  background-image: url("../img/umbrella.png");
 }
 
 .man-galante__item.socks {
   width: 656px;
   height: 606px;
-  right: -100px;
-  top: 230px;
+  right: -125px;
+  top: 72px;
+}
+
+.man-galante__item.socks span {
+  margin-top: -24px;
+  margin-left: 100px;
 }
 
 .man-galante__item.socks:before {
@@ -370,8 +377,8 @@ body {
 .make-poster {
   min-height: 360px;
   position: relative;
-  margin-bottom: 180px;
-  padding: 56px 0;
+  margin-bottom: 0;
+  padding: 89px 0 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +448,7 @@ body {
   }
 
   .women-galante__body {
-    min-height: 876px;
+    min-height: 609px;
   }
 
   .women-galante__item {
@@ -452,9 +459,9 @@ body {
 
   .women-galante__item.hat {
     width: 360px;
-    height: 252px;
+    height: 191px;
     left: -16px;
-    top: 0;
+    top: 30px;
     margin: 0 auto;
   }
 
@@ -469,10 +476,11 @@ body {
 
   .women-galante__item.glasses {
     width: 360px;
-    height: 241px;
-    right: 16px;
+    height: 165px;
+    right: auto;
+    left: -18px;
     top: 0;
-    margin-top: -95px;
+    margin-top: 0;
   }
 
   .women-galante__item.glasses span {
@@ -489,7 +497,7 @@ body {
     height: 268px;
     left: -6px;
     top: 0;
-    margin-top: -77px;
+    margin-top: -34px;
   }
 
   .women-galante__item.bag span {
@@ -556,29 +564,29 @@ body {
     line-height: 17px;
   }
 
-  .man-galante__item.scarf {
+  .man-galante__item.umbrella {
     width: 360px;
-    height: 351px;
-    left: -16px;
-    top: 0;
-    margin-top: -14px;
+    height: 338px;
+    left: 3px;
+    top: 61px;
+    margin-top: 0;
   }
 
-  .man-galante__item.scarf span {
-    margin-top: -55px;
-    margin-left: 60px;
+  .man-galante__item.umbrella span {
+    margin-top: -124px;
+    margin-left: -191px;
   }
 
-  .man-galante__item.scarf:before {
-    background-image: url("../img/scarf-mobile.png");
+  .man-galante__item.umbrella:before {
+    background-image: url("../img/umbrella-mobile.png");
   }
 
   .man-galante__item.socks {
     width: 304px;
     height: 273px;
-    right: -22px;
-    top: 0;
-    margin-top: -98px;
+    right: -33px;
+    top: -70px;
+    margin-top: 0;
   }
 
   .man-galante__item.socks span {
@@ -593,7 +601,6 @@ body {
   .make-poster {
     min-height: 500px;
     text-align: center;
-    margin-bottom: 100px;
     padding: 63px 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
